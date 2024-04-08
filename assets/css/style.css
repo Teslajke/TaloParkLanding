@@ -12,7 +12,7 @@
 body {
   background: #ffffff;
   color: #898989;
-  font-family: "Poppins", helvetica;
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 20px;
@@ -463,11 +463,20 @@ p {
   flex-direction: column;
 }
 
+#hero h1 span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+  font-size: 26px;
+}
+
 .hero-content h1 {
-  font-size: 40px;
+  font-size: 26px;
   font-weight: 700;
   margin-bottom: 10px;
-  text-transform: uppercase;
   color: #fff;
 }
 
