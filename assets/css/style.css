@@ -1592,10 +1592,12 @@ blockquote {
  */
 
 #window3 {
-  background: url("../img/window-3.jpg") center center / cover no-repeat; /* Updated background properties */
+  background: url("../img/window-3.jpg") center center / contain no-repeat;
   width: 100%;
-  height: 60vh; /* Adjusted height for responsiveness */
-  padding: 10vh 0 5vh 0; /* Modified padding values for better spacing */
+  background-size: cover;
+  position: relative;
+  min-height: 60vh;
+  padding: 430px 0 60px 0;
 }
 
 #window3 h2 {
