@@ -611,13 +611,13 @@ p {
 #services {
   text-align: center;
   background: url("../img/window-3.jpg") repeat scroll center center;
-  background-size: cover;
+  background-size: contain;
   height: 155vh;
   width: 100%;
 }
 
 .services .icon-box {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .services .icon {
