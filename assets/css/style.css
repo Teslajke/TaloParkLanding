@@ -471,7 +471,6 @@ p {
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
-  font-family: "Poppins", sans-serif;
   margin-bottom: 50px;
   font-size: 26px;
 }
@@ -1579,5 +1578,95 @@ blockquote {
   .entry-comments-body span {
     display: inline-block;
     margin-right: 0;
+  }
+}
+
+.comforter-regular {
+  font-family: "Comforter", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/** Window3
+ *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+#window3 {
+  background: url("../img/window-3.jpg") center center / contain no-repeat;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  min-height: 60vh;
+  padding: 430px 0 60px 0;
+}
+
+#window3 h2 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: var(--font-primary);
+}
+
+#window3 h2 span {
+  color: #fff;
+}
+
+#window3 p {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+#window3 .btn-book-a-table {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 36px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #18d26e;
+  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+}
+
+#window3 .btn-book-a-table:hover {
+  background: rgba(206, 18, 18, 0.8);
+  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+}
+
+#window3 .btn-watch-video {
+  font-size: 16px;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: #18d26e;
+  font-weight: 600;
+}
+
+#window3 .btn-watch-video i {
+  color: #18d26e;
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+#window3 .btn-watch-video:hover {
+  color: red;
+}
+
+#window3 .btn-watch-video:hover i {
+  color: rgba(206, 18, 18, 0.8);
+}
+
+@media (max-width: 640px) {
+  #window3 h2 {
+    font-size: 36px;
+  }
+
+  #window3 .btn-get-started,
+  #window3 .btn-watch-video {
+    font-size: 14px;
   }
 }
