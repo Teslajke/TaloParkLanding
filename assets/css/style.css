@@ -83,7 +83,9 @@ p {
   text-transform: uppercase;
 }
 
-.btn:hover,
+.btn:hover {
+  background-color: #149ddd;
+}
 .btn:focus {
   color: #fff;
 }
@@ -479,6 +481,7 @@ p {
   font-weight: 700;
   margin-bottom: 10px;
   color: #fff;
+  padding-top: 10%;
 }
 
 .hero-content p {
@@ -602,50 +605,71 @@ p {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+/* #services {
+  margin-top: -8%;
+} */
 #services {
-  background: #f7f7f7;
-  position: relative;
-  padding-bottom: 80px;
+  text-align: center;
+  background: url("../img/window-3.jpg") repeat scroll center center;
+  background-size: cover;
+  height: 155vh;
+  width: 100%;
 }
 
-.services-block span {
-  margin: 10px 0;
-  position: relative;
-  font-size: 13px;
-  color: #292929;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  text-transform: uppercase;
-  display: block;
+.services .icon-box {
+  margin-bottom: 20px;
 }
 
-.services-block .separator {
-  margin: 0;
-  font-size: 13px;
-  line-height: 22px;
+.services .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background: #149ddd;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid #149ddd;
 }
 
-.services-block i {
-  font-size: 44px;
-  color: #b8a07e;
-  line-height: 44px;
+.services .icon i {
+  color: #fff;
+  font-size: 24px;
+  line-height: 0;
 }
 
-.services-slider .swiper-pagination {
-  margin-top: 30px;
-  position: relative;
+.services .icon-box:hover .icon {
+  background: #fff;
 }
 
-.services-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #b8a07e;
+.services .icon-box:hover .icon i {
+  color: #149ddd;
 }
 
-.services-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #b8a07e;
+.services .title {
+  margin-left: 80px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  color: #fff;
+}
+
+.services .title p {
+  color: #fff;
+}
+
+.services .title a:hover {
+  color: #149ddd;
+}
+
+.services .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
 }
 
 /*--------------------------------------------------------------
