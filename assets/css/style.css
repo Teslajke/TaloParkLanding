@@ -610,7 +610,7 @@ p {
 } */
 #services {
   text-align: center;
-  background: url("../img/window-3.jpg") repeat scroll center center;
+  background: url("../img/window-3.jpg") center center / contain no-repeat;
   background-size: contain;
   height: 155vh;
   width: 100%;
