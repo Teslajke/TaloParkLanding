@@ -46,6 +46,16 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Include Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- =======================================================
   * Template Name: Folio
@@ -54,6 +64,18 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+    <script>
+      $(document).ready(function () {
+        $("#videoModal").on("hidden.bs.modal", function (e) {
+          // Access the video player more directly
+          var videoPlayer = $(this).find("video").get(0);
+          if (videoPlayer) {
+            videoPlayer.pause();
+            videoPlayer.currentTime = 0; // Reset the time
+          }
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -399,17 +421,58 @@
                 какой-то текст.
               </p>
               <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                <!-- Book Table Button -->
                 <a href="#book-a-table" class="btn-book-a-table"
                   >Получить каталог</a
                 >
-                <a
-                  href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                  class="glightbox btn-watch-video d-flex align-items-center"
-                  ><i class="bi bi-play-circle"></i
-                  ><span>Смотреть видео</span></a
+
+                <!-- Button to trigger video modal -->
+                <button
+                  class="btn btn-primary d-flex align-items-center"
+                  data-toggle="modal"
+                  data-target="#videoModal"
                 >
+                  <i class="bi bi-play-circle"></i>
+                  <span>Смотреть видео</span>
+                </button>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="videoModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="videoModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="videoModalLabel">
+                        Video Title
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Video Element -->
+                      <video id="videoPlayer" width="80%" controls>
+                        <source src="assets/012.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+
             <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
               <img
                 src="assets/img/hero-img.png"
