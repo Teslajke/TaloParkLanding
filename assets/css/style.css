@@ -466,21 +466,6 @@ p {
   }
 }
 
-.p-invisible {
-  visibility: hidden;
-}
-
-@media (max-width: 767px) {
-  .p-visible {
-    visibility: hidden;
-  }
-  .p-invisible {
-    visibility: visible;
-    padding-left: 25%;
-    bottom: 100px;
-  }
-}
-
 #hero .hero-content {
   height: 100vh;
   text-align: left;
@@ -488,6 +473,11 @@ p {
   display: block;
   justify-content: center;
   flex-direction: column;
+}
+
+#hero p {
+  margin: 0%;
+  padding: 0% 0% 0% 20%;
 }
 
 #hero h1 span {
