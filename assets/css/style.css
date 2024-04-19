@@ -95,7 +95,7 @@ p {
 }
 
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 2px;
 }
 
 .section-title h2 {
@@ -500,7 +500,7 @@ p {
 @media (max-width: 768px) {
   #hero h1 {
     padding-left: 25%;
-    padding-top: 86%;
+    padding-top: 91%;
   }
   #hero {
     padding-bottom: 0%;
