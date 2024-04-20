@@ -29,6 +29,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   height: 100%;
+  text-transform: uppercase !important;
 }
 
 h1,
