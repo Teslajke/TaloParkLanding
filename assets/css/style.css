@@ -9,6 +9,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.custom-icon {
+  font-size: 3em !important; /* 3 times larger */
+}
+
 @font-face {
   font-family: "CustomFont";
   src: url("/assets/css/AvantGardeCTT/AvantGardeCTT/avantgardectt.ttf")
