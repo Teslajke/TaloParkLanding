@@ -464,9 +464,9 @@ p {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/home-bg.jpg") repeat scroll center center;
+  background: url("../img/home-bg-desktop.jpg") repeat scroll center center;
   background-size: contain;
-  height: 100vh;
+  height: 67vh;
   width: 100%;
   padding-top: 0;
   margin-top: 0;
@@ -482,6 +482,13 @@ p {
     padding-bottom: 0;
     padding-top: 0;
     margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #hero p {
+    padding-right: 20% !important;
+    padding-left: 0% !important;
   }
 }
 
@@ -1708,6 +1715,21 @@ blockquote {
   font-family: "CustomFont", serif;
 }
 
+@media (min-width: 768px) {
+  #window3 h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: "CustomFont", serif;
+    padding-left: 70%;
+    text-align: center;
+  }
+  .d-flex {
+    padding-left: 100%;
+  }
+}
+
 #window3 h2 span {
   color: #fff;
 }
@@ -1725,9 +1747,11 @@ blockquote {
   display: inline-block;
   padding: 12px 76px;
   border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
   transition: 0.5s;
-  color: #fff;
-  background: #b8a07e;
+  color: black;
+  background: rgba(255, 255, 255, 0.3);
+  opacity: 0, 3;
   box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
 }
 
