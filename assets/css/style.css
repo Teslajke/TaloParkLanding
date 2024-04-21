@@ -475,7 +475,7 @@ p {
 @media (min-width: 1440px) {
   #hero {
     background-image: url("../img/w1/2.jpg"); /* A higher resolution image */
-    background-position: top center; /* Adjust if the focal point is off */
+    /* background-position: top center; Adjust if the focal point is off */
     background-size: contain;
     background-repeat: no-repeat;
     height: 50%; /* Optional: Adjust height based on design needs */
