@@ -478,7 +478,7 @@ p {
     background-position: top center; /* Adjust if the focal point is off */
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60%; /* Optional: Adjust height based on design needs */
+    height: 50%; /* Optional: Adjust height based on design needs */
   }
 }
 
