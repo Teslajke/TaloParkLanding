@@ -472,6 +472,14 @@ p {
   margin-top: 0;
 }
 
+@media (min-width: 1440px) {
+  #hero {
+    background-image: url("../img/w1/1.jpg"); /* A higher resolution image */
+    background-position: top center; /* Adjust if the focal point is off */
+    height: 75%; /* Optional: Adjust height based on design needs */
+  }
+}
+
 @media (max-width: 768px) {
   #hero {
     background: url("../img/home-bg.jpg") no-repeat scroll center center;
